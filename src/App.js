@@ -1,25 +1,25 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const tempMin = -20
+const tempxMax = 40
+const heartMin = 80
+const heartMax = 180
+const stepsMin = 0
+const stepsMax = 50000
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="container-fluid">
+        <div className="row">
+          <p>Heart : {this.heartMin}</p>
+          <p>Temperature : {this.tempsMin}</p>
+          <p>Steps : {this.stepsMin}</p>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
